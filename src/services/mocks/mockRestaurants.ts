@@ -1,0 +1,61 @@
+import type { Restaurant } from "../../types";
+
+export const mockRestaurants: Restaurant[] = [
+  {
+    id: "1",
+    name: "Claro",
+    chefId: "chef-ran-shmueli",
+    dishes: [],
+    rate: 4,
+    address: "Rostchild Blvd 1, Tel Aviv",
+    location: "32.066157, 34.777819",
+    openingHours: [
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "Closed",
+      "Closed",
+    ],
+    pictureUrl: "../assets/pictures/restaurant/claro.png",
+  },
+  {
+    id: "2",
+    name: "Kab Kem",
+    chefId: "chef-yariv-malili",
+    dishes: [],
+    rate: 2,
+    address: "Herzl St 10, Tel Aviv",
+    location: "32.065542, 34.775111",
+     openingHours: [
+        "Closed",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "Closed",
+    ],
+    pictureUrl: "/mockPicture/kab-kem.jpg",
+  },
+  {
+    id: "3",
+    name: "Messa",
+    chefId: "chef-aviv-moshe",
+    dishes: [],
+    rate: 1,
+    address: "HaArba'a St 19, Tel Aviv",
+    location: "32.071563, 34.788741",
+    openingHours: [
+        "Closed",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "10:00-22:00",
+      "Closed",
+    ],
+    pictureUrl: "/mockPicture/messa.jpg"
+  },
+];
