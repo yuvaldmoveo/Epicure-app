@@ -1,0 +1,23 @@
+@use '../setup/vars';
+
+.header-container {
+  background-color: transparent;
+  width: 1440px;
+  height: 64px;
+  position: relative; 
+}
+
+.header-bar {
+  display: flex;            
+  flex-direction: row;
+  width: fit-content;       
+  height: fit-content;      
+  gap: 32px;                
+  position: absolute;       
+  top: 11.5px;
+  left: 127px;
+}
+
+.active{
+    color: vars.$color-golden-yellow-secondary;
+}

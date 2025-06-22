@@ -1,0 +1,26 @@
+@use '../setup/vars.module' as vars;
+
+.heroSearch {
+    background-image: url("../../pictures/general/hero-picture.png");
+    width: 1440px;
+    height: 696px;
+    top: 64px;
+
+}
+
+.content {
+        background-color: vars.$color-white-opacity ;
+        top: 26px;
+        left: 332px;
+        padding: 36px 126px;
+        width: 776px;
+        height: 221px;
+}
+
+.input {
+    top: 6px;
+    right: 12px;
+    bottom: 6px;
+    left: 12px;
+    gap: 16px;
+}
