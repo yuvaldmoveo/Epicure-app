@@ -1,0 +1,76 @@
+// app-colors
+$color-black-primary: #000000;
+$color-cool-gray-primary: #979797;
+$color-white-smoke-secondary: #F9F4EA;
+$color-golden-yellow-secondary: #F5BE00;
+$color-alabaster-secondary: #FAFAFA;
+$color-white-opacity: rgba(255, 255, 255, 0.88);
+
+
+// sizes
+$thin: 100;
+$regular: 400;
+
+// fonts
+$font-family: 'Helvetica Neue';
+
+// desktop text
+$h1-desktop-font-size: 32px;
+$h1-desktop-font-weight: $thin;
+
+$h2-desktop-font-size: 30px;
+$h2-desktop-font-weight: $thin;
+
+$h3-desktop-font-size: 40px;
+$h3-desktop-font-weight: $regular;
+
+$body-desktop-font-size: 24px;
+$body-desktop-font-weight: $thin;
+
+// mobile text
+$h1-mobile-font-size: 24px;
+$h1-mobile-font-weight: $thin;
+
+$h2-mobile-font-size: 16px;
+$h2-mobile-font-weight: $thin;
+
+$h3-mobile-font-size: 18px;
+$h3-mobile-font-weight: $regular;
+
+$body-mobile-font-size: 16px;
+$body-mobile-font-weight: $thin;
+
+// both for mobile and desktop
+$button-font-size: 16px;
+$button-font-weight: $thin;
+$button-background-color-primary: $color-black-primary;
+$button-background-color-secondary: transparent;
+$button-color-primary: $color-alabaster-secondary;
+$button-color-secondary: $color-black-primary;
+
+$input-font-size: 16px;
+$input-font-weight: $thin;
+
+$label-font-size: 14px;
+$label-font-weight: $thin;
+$label-color: $color-cool-gray-primary;
+
+
+// grid
+$grid-columns-desktop: 12;
+$grid-columns-mobile: 6;
+
+$gutter-width: 24px;
+$desktop-max-width: 1440px;
+$mobile-side-padding: 24px;
+
+$container-padding-desktop: 120px;
+
+//components
+$section-spacing: 48px;
+$heading-spacing: 16px;
+
+$section-padding: 24px;
+
+$element-gap: 8px;
+$card-width-desktop: 379px;
