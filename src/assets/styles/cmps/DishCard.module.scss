@@ -1,0 +1,147 @@
+@use "../setup/vars.module.scss" as vars;
+
+.dish-card--desktop {
+  .image {
+    width: 380px;
+    height: 306px;
+    object-fit: cover;
+  }
+
+  .data {
+    width: 380px;
+    height: 348px;
+    background-color: vars.$color-white-smoke-secondary;
+    padding: 24px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textBox {
+    width: 295px;
+    height: 171px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    width: 163px;
+    height: 94px;
+    font-family: vars.$font-family;
+    font-weight: vars.$h3-desktop-font-weight;
+    font-size: vars.$h3-desktop-font-size;
+    line-height: 47px;
+    letter-spacing: 2.67px;
+    text-align: center;
+    color: vars.$color-black-primary;
+  }
+
+  .ingredients {
+    width: 295px;
+    height: 123px;
+    font-family: vars.$font-family;
+    font-weight: vars.$body-desktop-font-weight;
+    font-size: vars.$body-desktop-font-size;
+    line-height: 30px;
+    letter-spacing: 1.97px;
+    text-align: center;
+    color: vars.$color-black-primary;
+  }
+
+  .icon {
+    width: 40px;
+    height: 31px;
+  }
+
+  .price {
+    width: 287px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .line {
+    width: 112px;
+    height: 0.5px;
+    background-color: vars.$color-cool-gray-primary;
+  }
+
+  .priceText {
+    font-family: vars.$font-family;
+    font-weight: vars.$body-desktop-font-weight;
+    font-size: vars.$body-desktop-font-size;
+    line-height: 30px;
+    letter-spacing: 1.97px;
+    color: vars.$color-black-primary;
+  }
+}
+
+.dish-card--mobile {
+  .image {
+    width: 245px;
+    height: 152px;
+    object-fit: cover;
+  }
+
+  .data {
+    width: 245px;
+    height: 236px;
+    background-color: vars.$color-white-smoke-secondary;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textBox {
+    width: 209px;
+    height: 129px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    width: 118px;
+    height: 21px;
+    font-family: vars.$font-family;
+    font-weight: vars.$h3-mobile-font-weight;
+    font-size: vars.$h3-mobile-font-size;
+    line-height: 100%;
+    letter-spacing: 2.67px;
+    color: vars.$color-black-primary;
+  }
+
+  .ingredients {
+    width: 209px;
+    height: 100px;
+    font-family: vars.$font-family;
+    font-weight: vars.$body-mobile-font-weight;
+    font-size: vars.$body-mobile-font-size;
+    line-height: 20px;
+    letter-spacing: 1.97px;
+    color: vars.$color-black-primary;
+    text-align: center;
+  }
+
+  .icon {
+    width: 30px;
+    height: 24px;
+  }
+
+  .price {
+    font-family: vars.$font-family;
+    font-weight: vars.$h3-mobile-font-weight;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.97px;
+    color: vars.$color-black-primary;
+  }
+}
