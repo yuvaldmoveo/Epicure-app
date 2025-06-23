@@ -8,8 +8,9 @@ $color-white-opacity: rgba(255, 255, 255, 0.88);
 
 
 // sizes
-$thin: 100;
+$thin: 200;
 $regular: 400;
+
 
 // fonts
 $font-family: 'Helvetica Neue';
@@ -17,28 +18,45 @@ $font-family: 'Helvetica Neue';
 // desktop text
 $h1-desktop-font-size: 32px;
 $h1-desktop-font-weight: $thin;
+$h1-desktop-line-height: 40px;
+$h1-desktop-letter-spacing: 1.97px;
 
 $h2-desktop-font-size: 30px;
 $h2-desktop-font-weight: $thin;
+$h2-desktop-line-height: 35px;
+$h2-desktop-letter-spacing: 1.25px;
 
 $h3-desktop-font-size: 40px;
 $h3-desktop-font-weight: $regular;
+$h3-desktop-line-height: 47px;
+$h3-desktop-letter-spacing: 2.67px;
+
 
 $body-desktop-font-size: 24px;
 $body-desktop-font-weight: $thin;
+$body-desktop-line-height: 30px;
+$body-desktop-letter-spacing: 1.97px;
 
 // mobile text
 $h1-mobile-font-size: 24px;
 $h1-mobile-font-weight: $thin;
+$h1-mobile-line-height: 32px;
+$h1-mobile-letter-spacing: 1.97px;
 
 $h2-mobile-font-size: 16px;
 $h2-mobile-font-weight: $thin;
+$h2-mobile-line-height: 24px;
+$h2-mobile-letter-spacing: 1.25px;
 
 $h3-mobile-font-size: 18px;
 $h3-mobile-font-weight: $regular;
+$h3-mobile-line-height: 100%;
+$h3-mobile-letter-spacing: 2.67px;
 
 $body-mobile-font-size: 16px;
 $body-mobile-font-weight: $thin;
+$body-mobile-line-height: 20px;
+$body-mobile-letter-spacing: 1.97px;
 
 // both for mobile and desktop
 $button-font-size: 16px;
@@ -50,10 +68,14 @@ $button-color-secondary: $color-black-primary;
 
 $input-font-size: 16px;
 $input-font-weight: $thin;
+$input-line-height: 18px;
+$input-letter-spacing: 1.97px;
 
 $label-font-size: 14px;
 $label-font-weight: $thin;
 $label-color: $color-cool-gray-primary;
+$label-line-height: 18px;
+$label-letter-spacing: 1.97px;
 
 
 // grid
@@ -62,11 +84,13 @@ $grid-columns-mobile: 6;
 
 $gutter-width: 24px;
 $desktop-max-width: 1440px;
-$mobile-side-padding: 24px;
+$mobile-max-width: 375px;
+$mobile-side-padding: 20px;
 
 $container-padding-desktop: 120px;
 
-//components
+
+// components
 $section-spacing: 48px;
 $heading-spacing: 16px;
 
@@ -74,3 +98,14 @@ $section-padding: 24px;
 
 $element-gap: 8px;
 $card-width-desktop: 379px;
+$card-width-mobile: 245px;
+
+//Heading reset
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
