@@ -49,7 +49,7 @@
     border: 0.5px solid #000000;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.1) !important;
-    padding-left: 48px;
+    padding-left: 60px;
     margin-top: 18px;
 
     font-family: vars.$font-family;
@@ -115,4 +115,21 @@
     font-weight: vars.$label-font-weight;
     font-size: vars.$label-font-size;
   }
+}
+
+.searchWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 1;
+  margin-top: 18px;
 }
