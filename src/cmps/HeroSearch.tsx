@@ -1,6 +1,6 @@
 import { useMedia } from "../hooks/useMedia";
 import styles from "/src/assets/styles/cmps/HeroSearch.module.scss";
-
+import { heroSearchTexts } from "../assets/texts/texts";
 
 export const HeroSearch = () => {
     const media = useMedia();
@@ -9,11 +9,11 @@ export const HeroSearch = () => {
         <section className={styles[`heroSearch--${media}`]}>
             <div className={styles[`content--${media}`]}>
                 <h1 className={styles.headline}>
-                    Epicure works with the top chef restaurants in Tel Aviv
+                    {heroSearchTexts.headline}
                 </h1>
                 <input
                     type="text"
-                    placeholder="Search for restaurant cuisine, chef"
+                    placeholder={heroSearchTexts.searchPlaceholder}
                     className={styles[`input--${media}`]}
                 />
             </div>
