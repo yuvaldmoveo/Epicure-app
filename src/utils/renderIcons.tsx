@@ -2,8 +2,8 @@ import React from "react";
 import { capitalize } from "lodash";
 
 type RenderIconsProps = {
-  icon: string | string[]; 
-  media?: "mobile" | "desktop"; 
+  icon: string | string[];
+  media?: "mobile" | "desktop";
   iconBoxClass?: string;
   iconClass: string;
 };
@@ -17,9 +17,15 @@ export const renderIcons = ({
   const iconsArray = Array.isArray(icon) ? icon : [icon];
 
   const rendered = iconsArray.map((iconItem) => {
-    const fileName = media
-      ? `${capitalize(iconItem)}-${media}.svg`
-      : `${capitalize(iconItem)}.svg`;
+    const requiresSize = ["spicy", "vegan", "vegetarian"].includes(iconItem.toLowerCase());
+
+    let fileName = "";
+    if (requiresSize && media) {
+      const size = media === "mobile" ? "Small" : "Big";
+      fileName = `Type=${capitalize(iconItem)}, Size=${size}.svg`;
+    } else {
+      fileName = `${capitalize(iconItem)}.svg`;
+    }
 
     const path = `/src/assets/icons/${fileName}`;
 
