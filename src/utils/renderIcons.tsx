@@ -1,27 +1,41 @@
 import React from "react";
-import { capitalize } from 'lodash';
+import { capitalize } from "lodash";
 
 type RenderIconsProps = {
-  icons: string[];
-  media: "mobile" | "desktop";
-  iconBoxClass: string;
+  icon: string | string[]; 
+  media?: "mobile" | "desktop"; 
+  iconBoxClass?: string;
   iconClass: string;
 };
 
 export const renderIcons = ({
-  icons,
+  icon,
   media,
   iconBoxClass,
   iconClass,
-}: RenderIconsProps) => (
-  <div className={iconBoxClass}>
-    {icons.map((icon) => (
+}: RenderIconsProps) => {
+  const iconsArray = Array.isArray(icon) ? icon : [icon];
+
+  const rendered = iconsArray.map((iconItem) => {
+    const fileName = media
+      ? `${capitalize(iconItem)}-${media}.svg`
+      : `${capitalize(iconItem)}.svg`;
+
+    const path = `/src/assets/icons/${fileName}`;
+
+    return (
       <img
-        key={icon}
-        src={`/src/assets/icons/Type=${capitalize(icon)}, Size=${media === "mobile" ? "Small" : "Big"}.svg`}
-        alt={`${icon} icon`}
+        key={iconItem}
+        src={path}
+        alt={`${iconItem} icon`}
         className={iconClass}
       />
-    ))}
-  </div>
-);
+    );
+  });
+
+  return iconBoxClass ? (
+    <div className={iconBoxClass}>{rendered}</div>
+  ) : (
+    <>{rendered}</>
+  );
+};

@@ -21,7 +21,7 @@ export const DishCard = ({ data, media }: DishCardProps) => {
           <>
             <h3 className={styles.name}>{name}</h3>
             {renderIcons({
-              icons,
+              icon: icons,
               media,
               iconBoxClass: styles.iconBox,
               iconClass: styles.icon,
@@ -40,7 +40,7 @@ export const DishCard = ({ data, media }: DishCardProps) => {
             <h3 className={styles.name}>{name}</h3>
             <p className={styles.ingredients}>{ingredients}</p>
             {renderIcons({
-              icons,
+              icon: icons,
               media,
               iconBoxClass: styles.iconBox,
               iconClass: styles.icon,
