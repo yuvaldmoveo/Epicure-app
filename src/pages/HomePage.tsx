@@ -12,7 +12,7 @@ const mockDish = {
     name: "Smoked Pizza",
     restaurantId: "1",
     ingredients: 'Basil dough, cashew "butter", demi-glace, bison & radish',
-    price: 65,
+    price: 88,
     isAvailable: true,
     pictureUrl: 'src/assets/pictures/dish/smoked-pizza.png',
     icons: ["spicy"]
@@ -38,7 +38,7 @@ const mockChef = {
 }
 
 export const HomePage = () => {
-    const media = useMedia()
+    const media = useMedia();
 
     return (
         <>

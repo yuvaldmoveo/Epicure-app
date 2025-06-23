@@ -3,6 +3,7 @@
 .dish-card--desktop {
   width: 380px;
   height: 654px;
+  padding-bottom: vars.$section-padding;
 
   .image {
     width: 380px;
@@ -100,6 +101,7 @@
 
 .dish-card--mobile {
   width: vars.$card-width-mobile;
+
 
   .image {
     width: vars.$card-width-mobile;
