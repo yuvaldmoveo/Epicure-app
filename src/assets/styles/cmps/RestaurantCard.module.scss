@@ -1,0 +1,142 @@
+@use "../setup/vars.module.scss" as vars;
+
+  .restaurant-card--desktop {
+    width: vars.$card-width-desktop;
+    display: flex;
+    flex-direction: column;
+    padding: vars.$section-padding 0;
+
+    .image {
+        width: 100%;
+        height: 236px;
+        object-fit: cover;
+    }
+  
+    .data {
+      width: 100%;
+      height: 169px;
+      background-color: vars.$color-white-smoke-secondary;
+      color: vars.$color-black-primary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: vars.$element-gap;
+      
+
+      .textBox {
+          width: 146px;
+          height: 85px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: vars.$element-gap;
+          gap: vars.$element-gap;
+          
+
+          .name {
+            width: 106px;
+            height: 47px;
+            margin: 0;
+            font-family: vars.$font-family;
+            font-weight: vars.$h3-desktop-font-weight;
+            font-size: vars.$h3-desktop-font-size;
+            line-height: 47px;
+            letter-spacing: 2.67px; 
+          }
+          
+          .chef {
+            width: 146px;
+            height: 30px;
+            font-family: vars.$font-family;
+            font-weight: vars.$body-desktop-font-weight;
+            font-size: vars.$body-desktop-font-size;
+            line-height: 30px;
+            letter-spacing: 1.97px;
+            margin: 0;
+          }
+      }
+
+    
+
+      .ratingBox {
+          width: 216px;
+          height: 40px;
+          border: 1px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 4px;
+        
+
+        .star {
+          width: 40px;
+          height: 40px;
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        .filled {
+          color: vars.$color-golden-yellow-secondary;
+        }
+
+        .empty {
+          color: transparent;
+          -webkit-text-stroke: 1px vars.$color-golden-yellow-secondary;
+        }
+      }
+    }
+  }
+
+  .restaurant-card--mobile {
+    .image {
+      width: 245px;
+      height: 151.8px;
+      object-fit: cover;
+    }
+
+    .data {
+      width: 245px;
+      height: 81px;
+      padding: 16px;
+      gap: 10px;
+      background-color: vars.$color-white-smoke-secondary;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .textBox {
+      width: 104px;
+      height: 49px;
+      display: flex;
+      flex-direction: column;
+      gap: vars.$element-gap;
+    }
+
+    .name {
+      width: 54px;
+      height: 21px;
+      font-family: vars.$font-family;
+      font-weight: vars.$h3-mobile-font-weight;
+      font-size: vars.$h3-mobile-font-size;
+      line-height: 100%;
+      letter-spacing: 2.67px;
+      color: vars.$color-black-primary;
+    }
+
+    .chef {
+      width: 104px;
+      height: 20px;
+      font-family: vars.$font-family;
+      font-weight: vars.$body-mobile-font-weight;
+      font-size: vars.$body-mobile-font-size;
+      line-height: 20px;
+      letter-spacing: 1.97px;
+      color: vars.$color-black-primary;
+    }
+
+    .ratingBox {
+      display: none;
+    }
+}
