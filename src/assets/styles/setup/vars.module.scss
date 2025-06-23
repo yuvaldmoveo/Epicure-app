@@ -102,11 +102,14 @@ $card-width-desktop: 379px;
 $card-width-mobile: 245px;
 
 //Heading reset
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
   letter-spacing: inherit;
+  text-wrap: inherit;
+  width: inherit;
+  height: inherit;
 }

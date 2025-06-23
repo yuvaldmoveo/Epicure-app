@@ -124,6 +124,7 @@
       }
 
       .chef {
+        text-wrap: nowrap;
         font-family: vars.$font-family;
         font-weight: vars.$body-mobile-font-weight;
         font-size: vars.$body-mobile-font-size;
