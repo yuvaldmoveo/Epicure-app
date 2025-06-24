@@ -1,0 +1,38 @@
+@use "../setup/vars.module.scss" as vars;
+
+.homepage-main-frame--desktop {
+  width: vars.$desktop-max-width;
+  height: 3407px;
+  top: 840px;
+  gap: 80px;
+
+  .restaurant-frame {
+    width: vars.$desktop-max-width;
+    height: 555px;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .restaurant-headline {
+    height: 35px;
+    font-size: vars.$h2-desktop-font-size;
+    font-weight: vars.$h2-desktop-font-weight;
+    line-height: vars.$h2-desktop-line-height;
+    letter-spacing: vars.$h2-desktop-letter-spacing;
+  }
+
+  .restaurant-button {
+    font-size: vars.$text-button-desktop-font-size;
+    font-weight: vars.$text-button-desktop-font-weight;
+    line-height: vars.$text-button-desktop-line-height;
+    letter-spacing: vars.$text-button-desktop-letter-spacing;
+    margin-left: 1000px;
+  }
+}
+
+.homepage-main-frame--mobile {
+}
