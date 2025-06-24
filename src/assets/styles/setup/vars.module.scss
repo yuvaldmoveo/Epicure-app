@@ -38,6 +38,11 @@ $body-desktop-font-weight: $thin;
 $body-desktop-line-height: 30px;
 $body-desktop-letter-spacing: 1.97px;
 
+$text-button-desktop-font-size: 24px;
+$text-button-desktop-font-weight: $regular;
+$text-button-desktop-line-height: 35px;
+$text-button-desktop-letter-spacing: 2px;
+
 // mobile text
 $h1-mobile-font-size: 24px;
 $h1-mobile-font-weight: $thin;
@@ -58,6 +63,11 @@ $body-mobile-font-size: 16px;
 $body-mobile-font-weight: $thin;
 $body-mobile-line-height: 20px;
 $body-mobile-letter-spacing: 1.97px;
+
+$text-button-mobile-font-size: 16px;
+$text-button-mobile-font-weight: $regular;
+$text-button-mobile-line-height: 35px;
+$text-button-mobile-letter-spacing: 2px;
 
 // both for mobile and desktop
 $button-font-size: 16px;
@@ -101,8 +111,8 @@ $element-gap: 8px;
 $card-width-desktop: 379px;
 $card-width-mobile: 245px;
 
-//Heading reset
-h1, h2, h3, h4, h5, h6, p {
+//resets
+h1, h2, h3, h4, h5, h6, p, button {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -112,4 +122,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-wrap: inherit;
   width: inherit;
   height: inherit;
+  background-color: inherit;
+  border: inherit;
 }
