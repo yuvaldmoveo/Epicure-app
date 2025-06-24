@@ -11,10 +11,10 @@ export const HeroSearch = () => {
       <div className={styles[`content--${media}`]}>
         <h1 className={styles.headline}>{heroSearchTexts.headline}</h1>
 
-        <div className={styles.searchWrapper}>
+        <div className={styles[`searchWrapper--${media}`]}>
           {renderIcons({
             icon: "Search",
-            iconClass: styles.searchIcon,
+            iconClass: styles[`searchIcon--${media}`],
           })}
           <input
             type="text"
