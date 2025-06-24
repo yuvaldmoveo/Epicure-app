@@ -1,26 +1,135 @@
-@use '../setup/vars.module' as vars;
+@use "../setup/vars.module" as vars;
 
-.heroSearch {
-    background-image: url("../../pictures/general/hero-picture.png");
-    width: 1440px;
-    height: 696px;
-    top: 64px;
+.heroSearch--desktop {
+  background-image: url("../../pictures/general/hero-picture.png");
+  background-size: cover;
+  background-position: center;
+  width: vars.$desktop-max-width;
+  height: 696px;
+  top: 64px;
+  font-family: vars.$font-family;
+  display: flex;
+  align-items: center;
+  align-content: center;
 
+  .content--desktop {
+    background-color: vars.$color-white-opacity;
+    width: 776px;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-left: 63px;
+   
+  }
+
+  .headline {
+    width: 412px;
+    height: 80px;
+    font-weight: vars.$h1-desktop-font-weight;
+    font-size: vars.$h1-desktop-font-size;
+    letter-spacing: vars.$h1-desktop-letter-spacing;
+    line-height: vars.$h1-desktop-line-height;
+    margin-left: vars.$element-gap;
+    color: vars.$color-black-primary;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+   
+  }
+
+  .input--desktop {
+    width: 505px;
+    height: 48px;
+    
+    border: 0.5px solid #000000;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    padding-left: 60px;
+    margin-top: 18px;
+
+    font-family: vars.$font-family;
+    font-weight: vars.$body-desktop-font-weight;
+    font-size: vars.$body-desktop-font-size;
+    color: vars.$color-black-primary !important;
+    letter-spacing: 1.29px;
+    line-height: 29px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+  }
 }
 
-.content {
-        background-color: vars.$color-white-opacity ;
-        top: 26px;
-        left: 332px;
-        padding: 36px 126px;
-        width: 776px;
-        height: 221px;
+.heroSearch--mobile {
+  background-image: url("../../pictures/general/hero-picture.png");
+  background-size: cover;
+  background-position: center;
+  width: vars.$mobile-max-width;
+  height: 273px;
+  top: 46px;
+  font-family: vars.$font-family;
+  padding-inline: vars.$mobile-side-padding;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content--mobile {
+    background-color: vars.$color-white-opacity;
+    width: 335px;
+    height: 144px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: vars.$heading-spacing;
+  }
+
+  .headline {
+    font-weight: vars.$h1-mobile-font-weight;
+    font-size: vars.$h1-mobile-font-size;
+    line-height: 32px;
+    letter-spacing: 1.97px;
+    margin-left: vars.$element-gap;
+    margin-top: vars.$element-gap;
+  }
+
+  .input--mobile {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    width: 315px;
+    max-width: 315px;
+    height: 30px;
+    border: 0.5px solid #000000;
+    border-radius: 4px;
+    gap: 8px;
+
+    font-weight: vars.$label-font-weight;
+    font-size: vars.$label-font-size;
+  }
 }
 
-.input {
-    top: 6px;
-    right: 12px;
-    bottom: 6px;
-    left: 12px;
-    gap: 16px;
+.searchWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 1;
+  margin-top: 18px;
 }

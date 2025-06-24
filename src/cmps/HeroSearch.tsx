@@ -1,19 +1,28 @@
+import { useMedia } from "../hooks/useMedia";
 import styles from "/src/assets/styles/cmps/HeroSearch.module.scss";
-
+import { heroSearchTexts } from "../assets/texts/texts";
+import { renderIcons } from "../utils/renderIcons";
 
 export const HeroSearch = () => {
-    return (
-        <section className = {styles.heroSearch}>
-            <div className = {styles.content}>
-                <h2 className = {styles.headline}>
-                    Epicure works with the top chef restaurants in Tel Aviv
-                </h2>
-                <input
-                type = "text"
-                placeholder = "Search for restaurant cuisine, chef"
-                className = {styles.input}
-                />
-            </div>
-        </section>
-    )
-}
+  const media = useMedia();
+
+  return (
+    <section className={styles[`heroSearch--${media}`]}>
+      <div className={styles[`content--${media}`]}>
+        <h1 className={styles.headline}>{heroSearchTexts.headline}</h1>
+
+        <div className={styles.searchWrapper}>
+          {renderIcons({
+            icon: "Search",
+            iconClass: styles.searchIcon,
+          })}
+          <input
+            type="text"
+            placeholder={heroSearchTexts.searchPlaceholder}
+            className={styles[`input--${media}`]}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
