@@ -18,7 +18,7 @@ export const mockRestaurants: Restaurant[] = [
       "Closed",
       "Closed",
     ],
-    pictureUrl: "../assets/pictures/restaurant/claro.png",
+    pictureUrl: "/src/assets/pictures/restaurant/claro.png",
   },
   {
     id: "2",
@@ -37,7 +37,7 @@ export const mockRestaurants: Restaurant[] = [
       "10:00-22:00",
       "Closed",
     ],
-    pictureUrl: "/mockPicture/kab-kem.jpg",
+    pictureUrl: "/src/assets/pictures/restaurant/kab-kem.png",
   },
   {
     id: "3",
@@ -56,6 +56,6 @@ export const mockRestaurants: Restaurant[] = [
       "10:00-22:00",
       "Closed",
     ],
-    pictureUrl: "/mockPicture/messa.jpg"
+    pictureUrl: "/src/assets/pictures/restaurant/messa.png"
   },
 ];
