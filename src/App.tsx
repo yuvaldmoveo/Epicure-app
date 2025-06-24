@@ -1,10 +1,13 @@
 import { HomePage } from "./pages/HomePage"
-
+import { DesktopHeader } from "./cmps/DesktopHeader";
+import { useMedia } from "./hooks/useMedia"
 function App() {
 
+  const media = useMedia();
 
   return (
-    <main style={{ padding: '2rem' }}>
+    <main>
+      {media === 'desktop' && <DesktopHeader/> }
      <HomePage />
     </main>
   )
