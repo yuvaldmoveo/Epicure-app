@@ -18,9 +18,7 @@ export const DishCard = ({ data, media }: DishCardProps) => {
     <article className={styles[`dish-card--${media}`]}>
       <img src={pictureUrl} alt={name} className={styles.image} />
       <div className={styles.data}>
-        {media === 'desktop' ? (
-          <>
-            <div className={styles.textBox}>
+        <div className={styles.textBox}>
               <h3 className={styles.name}>{formattedName}</h3>
               {renderIcons({
                 icon: icons,
@@ -30,7 +28,8 @@ export const DishCard = ({ data, media }: DishCardProps) => {
               })}
               <p className={styles.ingredients}>{ingredients}</p>
             </div>
-
+        {media === 'desktop' ? (
+          <>
             <div className={styles.priceWrapper}>
               <span className={styles.line}></span>
               <div className={styles.priceBox}>
@@ -45,17 +44,6 @@ export const DishCard = ({ data, media }: DishCardProps) => {
           </>
         ) : (
           <>
-            <div className={styles.textBox}>
-              <h3 className={styles.name}>{formattedName}</h3>
-              <p className={styles.ingredients}>{ingredients}</p>
-              {renderIcons({
-                icon: icons,
-                media,
-                iconBoxClass: styles.iconBox,
-                iconClass: styles.icon,
-              })}
-            </div>
-
             <div className={styles.priceWrapper}>
               {renderIcons({
                 icon: "ILS",
