@@ -1,0 +1,12 @@
+@use "../setup/vars.module.scss" as vars;
+
+.dish-list--desktop {
+  width: 1188px;
+  height: 654px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .dish-list--mobile {
+// }

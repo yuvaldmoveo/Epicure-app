@@ -9,7 +9,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-1.jpg"
+    pictureUrl: "/src/assets/pictures/dish/pad-ki-mao-1.png"
   },
   {
     id: "dish-ta-ma-la-ko-1",
@@ -19,7 +19,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/ta-ma-la-ko-1.jpg"
+    pictureUrl: "/src/assets/pictures/dish/ta-ma-la-ko-1.png"
   },
   {
     id: "dish-red-farm-1",
@@ -29,7 +29,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/red-farm-1.jpg"
+    pictureUrl: "/src/assets/pictures/dish/red-farm-1.png"
   },
   {
     id: "dish-pad-ki-mao-2",
@@ -39,7 +39,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-2.jpg"
+    pictureUrl: "/src/assets/pictures/dish/pad-ki-mao-2.png"
   },
   {
     id: "dish-red-farm-2",
@@ -49,7 +49,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/red-farm-2.jpg"
+    pictureUrl: "/mockPicture/red-farm-2.png"
   },
   {
     id: "dish-pad-ki-mao-3",
@@ -59,7 +59,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-3.jpg"
+    pictureUrl: "/mockPicture/pad-ki-mao-3.png"
   },
   {
     id: "dish-ta-ma-la-ko-2",
@@ -69,7 +69,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/ta-ma-la-ko-2.jpg"
+    pictureUrl: "/mockPicture/ta-ma-la-ko-2.png"
   },
   {
     id: "dish-pad-ki-mao-4",
@@ -79,7 +79,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-4.jpg"
+    pictureUrl: "/mockPicture/pad-ki-mao-4.png"
   },
   {
     id: "dish-ta-ma-la-ko-3",
@@ -89,7 +89,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/ta-ma-la-ko-3.jpg"
+    pictureUrl: "/mockPicture/ta-ma-la-ko-3.png"
   },
   {
     id: "dish-pad-ki-mao-5",
@@ -99,7 +99,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Tofu, Spekkoek Peanuts, Spicy Manis, Pear Yakitori",
     price: 98,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-5.jpg"
+    pictureUrl: "/mockPicture/pad-ki-mao-5.png"
   },
   {
     id: "dish-red-farm-3",
@@ -109,7 +109,7 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/red-farm-3.jpg"
+    pictureUrl: "/mockPicture/red-farm-3.png"
   },
   {
     id: "dish-pad-ki-mao-6",
@@ -119,6 +119,6 @@ export const mockDishes: Dish[] = [
     ingredients: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
     price: 88,
     isAvailable: true,
-    pictureUrl: "/mockPicture/pad-ki-mao-6.jpg"
+    pictureUrl: "/mockPicture/pad-ki-mao-6.png"
   }
 ];
