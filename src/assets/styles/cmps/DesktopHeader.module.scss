@@ -1,7 +1,31 @@
 @use "../setup/vars.module.scss" as vars;
 
-.header--desktop{
-    width: vars.$desktop-max-width;
-    height: 64px;
-    
+.desktop-header {
+  display: flex;
+  align-items: center;
+  gap: vars.$element-gap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.logoImage {
+  width: 32.93px;
+  height: 32px;
+  top: 1.5px;
+  margin-left: 127px;
+}
+
+.logoText {
+  width: 114px;
+  font-size: 27px;
+  font-weight: 200;
+  line-height: 100%;
+  letter-spacing: 1.35px;
+  margin-top: 1.5px;
 }
