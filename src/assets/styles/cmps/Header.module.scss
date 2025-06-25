@@ -1,23 +1,18 @@
-@use '../setup/vars';
+@use "../setup/vars.module.scss" as vars;
 
-.header-container {
-  background-color: transparent;
-  width: 1440px;
+.header--desktop {
+  width: vars.$desktop-max-width;
   height: 64px;
-  position: relative; 
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: vars.$font-family;
 }
 
-.header-bar {
-  display: flex;            
-  flex-direction: row;
-  width: fit-content;       
-  height: fit-content;      
-  gap: 32px;                
-  position: absolute;       
-  top: 11.5px;
-  left: 127px;
-}
-
-.active{
-    color: vars.$color-golden-yellow-secondary;
+.header-left--desktop,
+.header-right--desktop {
+  display: flex;
+  align-items: center;
 }
