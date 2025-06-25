@@ -1,0 +1,54 @@
+@use "../setup/vars.module.scss" as vars;
+
+.chef-of-the-week--desktop {
+  width: 1185px;
+  height: 924px;
+  gap: 45px;
+  margin-left: 98px;
+
+  .headline {
+    width: 1112px;
+    height: 35px;
+    font-family: vars.$font-family;
+    font-size: vars.$h2-desktop-font-size;
+    font-weight: vars.$h2-desktop-font-weight;
+    line-height: vars.$h2-desktop-line-height;
+    letter-spacing: vars.$h2-desktop-letter-spacing;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 164px;
+  }
+
+  .cardAndAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .chefRestaurant {
+    width: 725px;
+    height: 432px;
+
+    .restaurantHeadline {
+      width: 665px;
+      height: 35px;
+      
+      text-align: left;
+      margin-left: 40px;
+      margin-top: 40px;
+
+      font-family: vars.$font-family;
+      font-size: vars.$h2-desktop-font-size;
+      font-weight: vars.$h2-desktop-font-weight;
+      line-height: vars.$h2-desktop-line-height;
+      letter-spacing: vars.$h2-desktop-letter-spacing;
+      color: vars.$color-black-primary;
+    }
+  }
+}

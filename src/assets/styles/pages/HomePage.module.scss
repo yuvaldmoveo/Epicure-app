@@ -5,6 +5,9 @@
   height: 3407px;
   top: 840px;
   gap: 80px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 
   .restaurant-frame {
     width: vars.$desktop-max-width;
@@ -35,7 +38,7 @@
 
   .dish-frame {
     width: vars.$desktop-max-width;
-    height: 809px; 
+    height: 809px;
     gap: 40px;
     text-align: center;
     align-items: center;

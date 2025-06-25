@@ -1,0 +1,32 @@
+@use "../setup/vars.module.scss" as vars;
+
+.card {
+  width: 231px;
+  height: 337px;
+  margin-top: 40px;
+
+  .image {
+    width: 231px;
+    height: 224px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .data {
+    height:133px;
+    padding-top: 20px;
+    gap: vars.$element-gap;
+    background-color: vars.$color-white-smoke-secondary;
+
+    .name {
+        display: flex;
+        justify-content: center;
+
+        font-size: vars.$h2-desktop-font-size;
+        font-weight: vars.$h3-desktop-font-weight;
+        line-height: vars.$h3-desktop-line-height;
+        letter-spacing: vars.$h3-mobile-letter-spacing;
+        color: vars.$color-black-primary;
+    }
+  }
+}
