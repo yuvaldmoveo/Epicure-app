@@ -14,3 +14,9 @@ export const chefOfTheWeekTexts = {
     chefHealine: "CHEF OF THE WEEK:",
     chefOfTheWeekRestaurants: "'s Restaurants",
 }
+
+export const desktopHeaderTexts = {
+    appName: "EPICURE",
+    resNav: "Restaurants",
+    chefNav: "Chefs",
+}
