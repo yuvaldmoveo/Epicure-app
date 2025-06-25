@@ -7,6 +7,7 @@ import { Footer } from "../cmps/Footer";
 import { homePageTexts } from "../assets/texts/texts";
 import { RestaurantList } from "../cmps/RestaurantList";
 import { DishList } from "../cmps/DishList";
+import { IconList } from "../cmps/IconList";
 
 const mockChef = {
     id: "chef-aviv-moshe",
@@ -19,8 +20,6 @@ const mockChef = {
 
 export const HomePage = () => {
     const media = useMedia();
-    //const media = "mobile";
-    console.log(media)
     return (
         <>
             <HeroSearch />
@@ -33,6 +32,10 @@ export const HomePage = () => {
                 <div className={styles[`dish-frame`]}>
                     <h2 className ={styles[`dish-headline`]}>{homePageTexts.dishHeadline}</h2>
                     <DishList media={media} />
+                </div>
+                <div className={styles[`icon-frame`]}>
+                    <h2 className={styles[`icon-headline`]}>{homePageTexts.iconsHeadline}</h2>
+                    <IconList/>
                 </div>
                 <ChefCard data={mockChef} media={media} />
                 <AboutUs/>
