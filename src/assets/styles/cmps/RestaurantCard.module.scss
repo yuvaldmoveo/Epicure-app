@@ -4,7 +4,6 @@
   width: vars.$card-width-desktop;
   display: flex;
   flex-direction: column;
-  padding: vars.$section-padding 0;
 
   .image {
     width: 100%;
@@ -41,6 +40,11 @@
         font-size: vars.$h3-desktop-font-size;
         line-height: vars.$h3-desktop-line-height;
         letter-spacing: vars.$h3-desktop-letter-spacing;
+        text-wrap: nowrap;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
       }
 
       .chef {

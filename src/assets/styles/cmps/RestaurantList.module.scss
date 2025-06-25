@@ -1,0 +1,9 @@
+@use "../setup/vars.module.scss" as vars;
+
+.restaurant-list--desktop {
+  width: 1185px;
+  height: 480px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}

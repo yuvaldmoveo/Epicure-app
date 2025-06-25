@@ -1,0 +1,7 @@
+@use "../setup/vars.module.scss" as vars;
+
+.footer--desktop{
+    width: vars.$desktop-max-width;
+    height: 85px;
+    top: -2733px;
+}
