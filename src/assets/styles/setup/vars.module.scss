@@ -111,8 +111,22 @@ $element-gap: 8px;
 $card-width-desktop: 379px;
 $card-width-mobile: 245px;
 
+//
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+
 //resets
-h1, h2, h3, h4, h5, h6, p, button {
+h1, h2, h3, h4, h5, h6, p, button, link, a, header {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -124,4 +138,6 @@ h1, h2, h3, h4, h5, h6, p, button {
   height: inherit;
   background-color: inherit;
   border: inherit;
+  color: inherit;
+  position: inherit;
 }

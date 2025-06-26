@@ -1,15 +1,18 @@
-import { HomePage } from "./pages/HomePage"
-import { DesktopHeader } from "./cmps/DesktopHeader";
-import { useMedia } from "./hooks/useMedia"
-function App() {
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
+import { Header } from './cmps/Header'
+import { useMedia } from './hooks/useMedia'
 
-  const media = useMedia();
+function App() {
+  const media = useMedia()
 
   return (
-    <main>
-      {media === 'desktop' && <DesktopHeader/> }
-     <HomePage />
-    </main>
+    <BrowserRouter>
+      <Header media={media} />
+      <main>
+        <Router />
+      </main>
+    </BrowserRouter>
   )
 }
 
