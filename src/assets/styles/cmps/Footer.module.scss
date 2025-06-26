@@ -1,7 +1,27 @@
 @use "../setup/vars.module.scss" as vars;
 
-.footer--desktop{
-    width: vars.$desktop-max-width;
-    height: 85px;
-    top: -2733px;
+.footer--desktop {
+  width: vars.$desktop-max-width;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+
+  .texts {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    font-family: vars.$font-family;
+    font-size: 18px;
+    font-weight: vars.$thin;
+    letter-spacing: 1.92px;
+    color: vars.$color-black-primary;
+  }
+}
+
+.footer--mobile {
+  width: 377px;
+  height: 202px;
+  top: 3763px;
 }

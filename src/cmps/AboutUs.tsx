@@ -9,7 +9,7 @@ export const AboutUs = () => {
     const media = useMedia();
     return (
         <article className={styles[`about-us--${media}`]}>
-            <div className={styles.data}>
+            <div className={styles.leftContent}>
                 <h2 className={styles.header}>{aboutUsTexts.headline}</h2>
                 <div className={styles.text}>
                     <LoremIpsum p={1.5} />
@@ -27,6 +27,7 @@ export const AboutUs = () => {
                 <img src="/src/assets/icons/AboutUsLogo.svg" alt="Epicure logo" />
             </div>
         </article>
+
     )
 
 }

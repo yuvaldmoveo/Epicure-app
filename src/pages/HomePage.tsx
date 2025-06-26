@@ -1,6 +1,5 @@
 import styles from "../assets/styles/pages/HomePage.module.scss";
 import { HeroSearch } from '../cmps/HeroSearch';
-import { ChefCard } from '../cmps/ChefCard';
 import { useMedia } from '../hooks/useMedia';
 import { AboutUs } from "../cmps/AboutUs";
 import { Footer } from "../cmps/Footer";
@@ -9,15 +8,6 @@ import { RestaurantList } from "../cmps/RestaurantList";
 import { DishList } from "../cmps/DishList";
 import { IconList } from "../cmps/IconList";
 import { ChefOfTheWeek } from "../cmps/ChefOfTheWeek";
-
-const mockChef = {
-    id: "chef-aviv-moshe",
-    name: "Aviv Moshe",
-    about: "Chef Aviv Moshe brings innovative techniques to traditional Israeli dishes.",
-    isChefOfTheWeek: true,
-    pictureUrl: "/src/assets/pictures/chef/chef-aviv-moshe.jpg",
-    restaurants: ["3"]
-}
 
 export const HomePage = () => {
     const media = useMedia();
