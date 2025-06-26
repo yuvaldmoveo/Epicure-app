@@ -20,10 +20,14 @@ const getChefById = async (chefId: string): Promise<Chef | null> =>{
   return mockChefs.find((chef) => chef.id === chefId ) || null
 }
 
+const getRestaurantById = async (RestaurantId: string): Promise<Restaurant | null> => {
+  return mockRestaurants.find((restaurant) => restaurant.id === RestaurantId) || null
+}
 
 export const api = {
   getTopRatedRestaurants,
   getDishes,
   getChefOfTheWeek,
-  getChefById
+  getChefById,
+  getRestaurantById
 }

@@ -22,7 +22,7 @@ export const mockChefs: Chef[] = [
     name: "Aviv Moshe",
     about: "Chef Aviv Moshe brings innovative techniques to traditional Israeli dishes.",
     isChefOfTheWeek: true,
-    pictureUrl: "/mockPictur/aviv-moshe.jpg",
+    pictureUrl: "/src/assets/pictures/chef/chef-aviv-moshe.jpg",
     restaurants: ["3"]
   },
 ]

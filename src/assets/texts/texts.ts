@@ -7,7 +7,10 @@ export const homePageTexts = {
     restaurantsHeadline: "POPULAR RESTAURANT IN EPICURE:",
     restaurantNavText: "All Restaurants",
     dishHeadline: "SIGNATURE DISH OF:",
-    iconsHeadline: "THE MEANING OF OUR ICONS:",
+    iconsHeadline: "THE MEANING OF OUR ICONS:",    
+};
+
+export const chefOfTheWeekTexts = {
     chefHealine: "CHEF OF THE WEEK:",
     chefOfTheWeekRestaurants: "'s Restaurants",
-};
+}

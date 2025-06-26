@@ -8,6 +8,7 @@ import { homePageTexts } from "../assets/texts/texts";
 import { RestaurantList } from "../cmps/RestaurantList";
 import { DishList } from "../cmps/DishList";
 import { IconList } from "../cmps/IconList";
+import { ChefOfTheWeek } from "../cmps/ChefOfTheWeek";
 
 const mockChef = {
     id: "chef-aviv-moshe",
@@ -37,7 +38,7 @@ export const HomePage = () => {
                     <h2 className={styles[`icon-headline`]}>{homePageTexts.iconsHeadline}</h2>
                     <IconList/>
                 </div>
-                <ChefCard data={mockChef} media={media} />
+                <ChefOfTheWeek />
                 <AboutUs/>
                 <Footer/>
             </div>

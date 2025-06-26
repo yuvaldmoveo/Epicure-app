@@ -1,0 +1,19 @@
+@use "../setup/vars.module.scss" as vars;
+
+.about--desktop{
+    width: 642px;
+    height: 255px;
+    top: 96px;
+    left: 541.5px;
+    margin-top: 40px;
+
+    font-size: vars.$body-desktop-font-size;
+    font-weight: vars.$body-desktop-font-weight;
+    line-height: vars.$h2-desktop-line-height;
+    letter-spacing: vars.$h2-mobile-letter-spacing;
+    color: vars.$color-black-primary;
+}
+
+.about--mobile{
+
+}

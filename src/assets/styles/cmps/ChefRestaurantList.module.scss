@@ -1,0 +1,11 @@
+@use "../setup/vars.module.scss" as vars;
+
+.chef-restaurant-list--desktop {
+  width: 725px;
+  height: 432px;
+  align-self: start;
+  margin-left: 40px;
+
+  .restaurants {
+  }
+}
