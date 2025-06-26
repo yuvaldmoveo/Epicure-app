@@ -35,7 +35,7 @@
 
   .dish-frame {
     width: vars.$desktop-max-width;
-    height: 809px; // includes the 40px gap - MIGHT NEED TO CHANGE
+    height: 809px; 
     gap: 40px;
     text-align: center;
     align-items: center;
@@ -51,7 +51,27 @@
       letter-spacing: vars.$h2-desktop-letter-spacing;
     }
   }
+
+  .icon-frame {
+    width: vars.$desktop-max-width;
+    height: 265px;
+    gap: 32px;
+    background-color: vars.$color-alabaster-secondary;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .icon-headline {
+      padding-top: 40px;
+      height: 35px;
+      font-size: vars.$h2-desktop-font-size;
+      font-weight: vars.$h2-desktop-font-weight;
+      line-height: vars.$h2-desktop-line-height;
+      letter-spacing: vars.$h2-desktop-letter-spacing;
+    }
+  }
 }
 
-// .homepage-main-frame--mobile {
-// }
+.homepage-main-frame--mobile {
+}
