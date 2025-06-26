@@ -1,7 +1,7 @@
 @use "../setup/vars.module.scss" as vars;
 
 .header--desktop {
-  width: vars.$desktop-max-width;
+  width: vars.$desktop-max-width !important;
   height: 64px;
   background-color: transparent;
   position: relative;
@@ -13,6 +13,22 @@
 
 .header-left--desktop,
 .header-right--desktop {
+  display: flex;
+  align-items: center;
+}
+
+.header--mobile {
+  width: 375px;
+  height: 46px;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left--mobile,
+.header-right--mobile {
   display: flex;
   align-items: center;
 }
