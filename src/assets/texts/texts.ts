@@ -20,3 +20,10 @@ export const desktopHeaderTexts = {
     resNav: "Restaurants",
     chefNav: "Chefs",
 }
+
+export const aboutUsTexts = {
+    appName:  "EPICURE",
+    headline: "ABOUT US",
+    downloadApple: "Download on the App Store",
+    downloadGoogle: "Get it on Google Play",
+}
