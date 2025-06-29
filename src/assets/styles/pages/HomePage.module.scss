@@ -28,21 +28,20 @@
     }
 
     .restaurant-button {
-      margin-right:20%;
+      margin-right: 20%;
 
       display: flex;
       align-items: center;
-      justify-content:flex-end;
+      justify-content: flex-end;
       gap: 8px;
       background: none;
-      
+
       color: vars.$color-black-primary;
       font-size: vars.$text-button-desktop-font-size;
       font-weight: vars.$text-button-desktop-font-weight;
       line-height: vars.$text-button-desktop-line-height;
       letter-spacing: vars.$text-button-desktop-letter-spacing;
       cursor: pointer;
-      
 
       .arrowIcon {
         width: 16px;
