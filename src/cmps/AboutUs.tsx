@@ -9,7 +9,7 @@ export const AboutUs = () => {
 
     const appLogo = (
         <div className={styles.appLogoSection}>
-            <img className = {styles.appLogoImg} src="/src/assets/icons/AboutUsLogo.svg" alt="Epicure logo" />
+            <img className={styles.appLogoImg} src="/src/assets/icons/AboutUsLogo.svg" alt="Epicure logo" />
         </div>
     );
 
@@ -36,7 +36,6 @@ export const AboutUs = () => {
 
     return (
         <article className={styles[`about-us--${media}`]}>
-            
             {media === 'mobile' ? (
                 <div className={styles.mobileContent}>
                     {appLogo}
@@ -45,12 +44,18 @@ export const AboutUs = () => {
                     {textBlock}
                 </div>
             ) : (
-                <div className={styles.leftContent}>
-                    {headline}
-                    {textBlock}
-                    {downloadButtons}
-                </div>
+                <>
+                    <div className={styles.contentWrapper}>
+                        <div className={styles.leftContent}>
+                            {headline}
+                            {textBlock}
+                            {downloadButtons}
+                        </div>
+                        {appLogo}
+                    </div>
+                </>
             )}
         </article>
+
     );
 };

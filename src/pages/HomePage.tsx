@@ -45,8 +45,8 @@ export const HomePage = () => {
                     <IconList />
                 </div>
                 <ChefOfTheWeek />
-                {/* <AboutUs />
-                <Footer /> */}
+                <AboutUs />
+                {/* <Footer /> */}
             </div>
         </>
     )
