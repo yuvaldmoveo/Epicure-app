@@ -4,7 +4,7 @@ import { Header } from './cmps/Header'
 import { useMedia } from './hooks/useMedia'
 
 function App() {
-  const media = useMedia()
+  const media = useMedia();
 
   return (
     <BrowserRouter>

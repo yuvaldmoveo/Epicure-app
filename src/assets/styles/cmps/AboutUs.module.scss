@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 40%; 
+    max-width: 40%;
 
     .header {
       font-size: vars.$h2-desktop-font-size;
@@ -37,18 +37,18 @@
     .downloadButtons {
       display: flex;
       gap: 20px;
-     margin-top: 10%;
+      margin-top: 10%;
     }
   }
 
-  .appLogo {
+  .appLogoSection {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30%;
     padding-right: 9%;
     padding-top: 8%;
-    img {
+    .appLogoImg {
       max-width: 100%;
       height: auto;
     }
