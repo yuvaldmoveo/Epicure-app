@@ -8,6 +8,8 @@ interface HeaderProps {
     media: Media
 }
 
+
+
 export const Header = ({ media }: HeaderProps) => {
     return (
         <header className={styles[`header--${media}`]}>

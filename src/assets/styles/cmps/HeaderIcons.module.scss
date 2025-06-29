@@ -12,3 +12,17 @@
     height: 24px;
   }
 }
+
+.header-icons--mobile {
+  width: 100px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 51.07px;
+  margin-right: 20px;
+
+  .header-icon--mobile {
+    width: 20px;
+    height: 20px;
+  }
+}

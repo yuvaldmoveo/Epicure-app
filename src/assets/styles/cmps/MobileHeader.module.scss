@@ -1,0 +1,19 @@
+@use "../setup/vars.module.scss" as vars;
+
+.mobile-header {
+  width: 203.93px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menuButton {
+    width: 55px;
+    top: 2.5px;
+  }
+
+  .logo {
+    height: 32px;
+    width: 32.93px;
+  }
+}

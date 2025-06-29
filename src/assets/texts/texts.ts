@@ -22,8 +22,11 @@ export const desktopHeaderTexts = {
 }
 
 export const aboutUsTexts = {
-    appName:  "EPICURE",
     headline: "ABOUT US",
-    downloadApple: "Download on the App Store",
-    downloadGoogle: "Get it on Google Play",
+}
+
+export const footerTexts = {
+    contact: " Contact Us",
+    terms: "Terms Of Use",
+    privacy: "Privacy Policy",
 }
