@@ -14,7 +14,7 @@ export const IconList = () => {
                     <div key={key} className={styles.iconBox}>
                         {renderIcons({
                             icon: key,
-                            media,
+                            media: 'desktop',
                             iconClass: styles.icon,
                         })}
                         <p className={styles.label}>

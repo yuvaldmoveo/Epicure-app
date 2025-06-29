@@ -10,6 +10,16 @@ import { IconList } from "../cmps/IconList";
 import { ChefOfTheWeek } from "../cmps/ChefOfTheWeek";
 
 export const HomePage = () => {
+
+    const restaurantButtonEl = (<button className={styles[`restaurant-button`]}>
+        {homePageTexts.restaurantNavText}
+        <img
+            src="/src/assets/icons/Arrow.svg"
+            alt="Arrow icon"
+            className={styles.icon}
+        />
+    </button>)
+
     const media = useMedia();
     return (
         <>
@@ -18,26 +28,25 @@ export const HomePage = () => {
                 <div className={styles[`restaurant-frame`]}>
                     <h2 className={styles[`restaurant-headline`]}>{homePageTexts.restaurantsHeadline}</h2>
                     <RestaurantList media={media} />
-                    <button className={styles[`restaurant-button`]}>
-                        {homePageTexts.restaurantNavText}
-                        <img
-                            src="/src/assets/icons/Arrow.svg"
-                            alt="Arrow icon"
-                            className={styles.icon}
-                        />
-                    </button>
+                    <>
+                    {restaurantButtonEl}
+                    </>
                 </div>
                 <div className={styles[`dish-frame`]}>
                     <h2 className={styles[`dish-headline`]}>{homePageTexts.dishHeadline}</h2>
                     <DishList media={media} />
+                    {media === 'mobile' && <>
+                    {restaurantButtonEl}
+                    </>
+                    }
                 </div>
                 <div className={styles[`icon-frame`]}>
                     <h2 className={styles[`icon-headline`]}>{homePageTexts.iconsHeadline}</h2>
                     <IconList />
                 </div>
                 <ChefOfTheWeek />
-                <AboutUs />
-                <Footer />
+                {/* <AboutUs />
+                <Footer /> */}
             </div>
         </>
     )

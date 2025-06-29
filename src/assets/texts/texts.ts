@@ -23,6 +23,7 @@ export const desktopHeaderTexts = {
 
 export const aboutUsTexts = {
     headline: "ABOUT US",
+    appName: "EPICURE",
 }
 
 export const footerTexts = {

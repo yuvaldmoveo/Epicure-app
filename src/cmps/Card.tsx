@@ -12,7 +12,7 @@ interface CardProps {
 }
 
 export const Card = ({type, data} : CardProps) =>{
-    const media = useMedia()
+    const media = useMedia();
 
     switch(type){
         case 'restaurant':

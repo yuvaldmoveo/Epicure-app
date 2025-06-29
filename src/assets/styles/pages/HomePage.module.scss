@@ -92,4 +92,98 @@
 }
 
 .homepage-main-frame--mobile {
+  width: 100%;
+  max-height: 3965px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  .restaurant-frame {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-left: 20px;
+
+    .restaurant-headline {
+      height: 24px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$h2-mobile-font-weight;
+      line-height: vars.$h3-mobile-line-height;
+      letter-spacing: vars.$h2-mobile-letter-spacing;
+      text-align: left;
+    }
+
+    .restaurant-button {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      margin-top: 26px;
+      align-items: center;
+
+      font-size: vars.$text-button-mobile-font-size;
+      font-weight: vars.$text-button-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$text-button-mobile-letter-spacing;
+      cursor: pointer;
+
+      .icon {
+        width: 24px;
+        height: 18px;
+      }
+    }
+  }
+
+  .dish-frame {
+    gap: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    .dish-headline {
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$h2-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$h2-mobile-letter-spacing;
+    }
+
+    .restaurant-button {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      align-items: center;
+
+      font-size: vars.$text-button-mobile-font-size;
+      font-weight: vars.$text-button-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$text-button-mobile-letter-spacing;
+      cursor: pointer;
+
+      .icon {
+        width: 24px;
+        height: 18px;
+      }
+    }
+  }
+
+  .icon-frame {
+    height: 584px;
+    gap: 32px;
+    background-color: vars.$color-alabaster-secondary;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+
+    .icon-headline {
+      padding-top: 24px;
+      height: 35px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$h2-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$h2-mobile-letter-spacing;
+    }
+  }
 }

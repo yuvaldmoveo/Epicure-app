@@ -54,3 +54,63 @@
     }
   }
 }
+
+.about-us--mobile {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  margin-right: 20px;
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: vars.$font-family;
+  background-color: vars.$color-alabaster-secondary;
+
+  .mobileContent {
+    margin-left: 20px;
+    .appLogoSection {
+      align-items: flex-start;
+      justify-content: center;
+
+      .appLogoImg {
+        width: 102px;
+        height: 95px;
+      }
+
+      .h2 {
+        font-size: large;
+        font-weight: vars.$thin;
+        letter-spacing: 2.35px;
+      }
+    }
+
+    .downloadButtons {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .downloadGoogle,
+      .downloadApple {
+        width: 180px;
+        height: 52px;
+      }
+    }
+
+    .header {
+      margin-top: 48px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$h2-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$h2-mobile-letter-spacing;
+    }
+    .text {
+      margin-top: 16px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$thin;
+      line-height: 28px;
+      letter-spacing: 2.14px;
+    }
+  }
+}

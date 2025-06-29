@@ -94,6 +94,7 @@
   width: vars.$card-width-mobile;
   display: flex;
   flex-direction: column;
+  margin-top: 17px;
 
   .image {
     width: 100%;
@@ -125,6 +126,7 @@
         letter-spacing: 2.67px;
         color: vars.$color-black-primary;
         margin: 0;
+        text-align: left;
       }
 
       .chef {
