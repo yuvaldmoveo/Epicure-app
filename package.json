@@ -12,8 +12,10 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
+    "prop-types": "^15.8.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-lorem-ipsum": "^1.4.10",
     "react-router-dom": "^7.6.2",
     "scss": "^0.2.4"
   },

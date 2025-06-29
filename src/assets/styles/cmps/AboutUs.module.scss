@@ -1,7 +1,55 @@
 @use "../setup/vars.module.scss" as vars;
 
-.about-us--desktop{
-    width: vars.$desktop-max-width;
-    height: 529px;
-    background-color: vars.$color-alabaster-secondary;
+.about-us--desktop {
+
+position: relative;
+  font-family: vars.$font-family;
+  width: vars.$desktop-max-width;
+  height: 529px;
+  background-color: vars.$color-alabaster-secondary;
+  color: vars.$color-black-primary;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-left: 122px;
+
+  .data {
+    width: 917.78px;
+    height: 449px;
+    top: 40px;
+    left: 132px;
+    gap: 16px;
+    text-align: left;
+    padding-left: 16px;
+
+    .header {
+      width: 665px;
+      height: 35px;
+      font-size: vars.$h2-desktop-font-size;
+      font-weight: vars.$h2-desktop-font-weight;
+      line-height: vars.$h2-desktop-line-height;
+      letter-spacing: 2.14px;
+    }
+
+    .text {
+      width: 569px;
+      height: 330px;
+      font-size: 20px;
+      font-weight: vars.$body-desktop-font-weight;
+      line-height: vars.$body-desktop-line-height;
+      letter-spacing: 2.14px;
+      padding-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    .downloadButtons {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .appLogo{
+    position: absolute;
+    left: 1133px;
+    top: 174px;
+  }
 }
