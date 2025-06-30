@@ -17,7 +17,9 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-lorem-ipsum": "^1.4.10",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2",
+    "redux": "^5.0.1",
     "scss": "^0.2.4"
   },
   "devDependencies": {
