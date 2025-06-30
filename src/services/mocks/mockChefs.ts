@@ -20,7 +20,7 @@ export const mockChefs: Chef[] = [
   {
     id: "chef-aviv-moshe",
     name: "Aviv Moshe",
-    about: "Chef Aviv Moshe brings innovative techniques to traditional Israeli dishes.",
+    about: "Chef Aviv Moshe is a culinary virtuoso renowned for infusing traditional Israeli and Mediterranean dishes with innovative techniques. His passion for food was ignited early, immersed in his family's kitchen and the vibrant local markets of his Egyptian heritage.",
     isChefOfTheWeek: true,
     pictureUrl: "/src/assets/pictures/chef/chef-aviv-moshe.jpg",
     restaurants: ["3"]

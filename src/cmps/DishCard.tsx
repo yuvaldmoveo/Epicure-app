@@ -12,6 +12,18 @@ export const DishCard = ({ data, media }: DishCardProps) => {
   const { name, ingredients, pictureUrl, price, icons } = data
   const formattedName = name.replace(' ', '\n');
 
+  const ingredientsEl = (
+    <p className={styles.ingredients}>{ingredients}</p>
+  )
+
+  const iconsEl = renderIcons({
+    icon: icons,
+    media,
+    iconBoxClass: styles.iconBox,
+    iconClass: styles.icon,
+  })
+
+
   if (!media) return null
 
   return (
@@ -19,15 +31,20 @@ export const DishCard = ({ data, media }: DishCardProps) => {
       <img src={pictureUrl} alt={name} className={styles.image} />
       <div className={styles.data}>
         <div className={styles.textBox}>
-              <h3 className={styles.name}>{formattedName}</h3>
-              {renderIcons({
-                icon: icons,
-                media,
-                iconBoxClass: styles.iconBox,
-                iconClass: styles.icon,
-              })}
-              <p className={styles.ingredients}>{ingredients}</p>
-            </div>
+          <h3 className={styles.name}>{formattedName}</h3>
+          {media === 'mobile' ? (
+            <>
+              {ingredientsEl}
+              {iconsEl}
+            </>
+          ) : (
+            <>
+              {iconsEl}
+              {ingredientsEl}
+            </>
+          )}
+        </div>
+
         {media === 'desktop' ? (
           <>
             <div className={styles.priceWrapper}>

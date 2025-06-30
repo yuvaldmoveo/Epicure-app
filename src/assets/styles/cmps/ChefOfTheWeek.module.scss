@@ -7,7 +7,6 @@
   margin-left: 98px;
 
   .headline {
-    //width: 1112px;
     height: 35px;
     font-family: vars.$font-family;
     font-size: vars.$h2-desktop-font-size;
@@ -34,11 +33,11 @@
   .chefRestaurant {
     width: 725px;
     height: 432px;
-
+    
     .restaurantHeadline {
       width: 665px;
       height: 35px;
-      
+
       text-align: left;
       margin-left: 40px;
       margin-top: 40px;
@@ -50,5 +49,25 @@
       letter-spacing: vars.$h2-desktop-letter-spacing;
       color: vars.$color-black-primary;
     }
+  }
+}
+
+.chef-of-the-week--mobile {
+  gap: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  text-align: left;
+  font-size: vars.$h3-mobile-font-size;
+  font-weight: vars.$h2-mobile-font-weight;
+  line-height: vars.$text-button-mobile-line-height;
+  letter-spacing: vars.$h2-mobile-letter-spacing;
+
+  .cardAndAbout {
+    gap: 20px;
   }
 }

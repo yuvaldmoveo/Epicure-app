@@ -20,7 +20,7 @@ export const ChefOfTheWeek = () => {
         fetchData();
     }, []);
 
-    if (!chef) return null; //ADD - loading or fallback
+    if (!chef) return null; 
 
     return (
         <section className={styles[`chef-of-the-week--${media}`]}>

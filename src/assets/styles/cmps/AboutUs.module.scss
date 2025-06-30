@@ -1,21 +1,77 @@
 @use "../setup/vars.module.scss" as vars;
 
+// .about-us--desktop {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-start;
+//   background-color: vars.$color-alabaster-secondary;
+//   font-family: vars.$font-family;
+//   color: vars.$color-black-primary;
+//   width: vars.$desktop-max-width;
+//   height: 529px;
+//   padding: 40px 138px 0 138px;
+
+//   .leftContent {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 24px;
+//     max-width: 45%;
+
+//     .header {
+//       font-size: vars.$h2-desktop-font-size;
+//       font-weight: vars.$h2-desktop-font-weight;
+//       line-height: vars.$h2-desktop-line-height;
+//       letter-spacing: 2.14px;
+//       text-align: left;
+//     }
+
+//     .text {
+//       width: 100%;
+//       font-size: 20px;
+//       font-weight: vars.$body-desktop-font-weight;
+//       line-height: vars.$body-desktop-line-height;
+//       letter-spacing: 2.14px;
+//       text-align: left;
+//     }
+
+//     .downloadButtons {
+//       display: flex;
+//       gap: 20px;
+//       margin-top: 10%;
+//     }
+//   }
+
+//   .appLogoSection {
+//     display: flex;
+//     align-self: flex-end;
+//     justify-content: flex-end;
+    
+//     .appLogoImg {
+//       max-width: 100%;
+//     }
+//   }
+// }
+
 .about-us--desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   background-color: vars.$color-alabaster-secondary;
   font-family: vars.$font-family;
   color: vars.$color-black-primary;
   width: vars.$desktop-max-width;
   height: 529px;
-  padding: 40px 138px 0 138px;
+
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 138px 40px 138px;
+    height: 100%;
+  }
 
   .leftContent {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 40%; 
+    max-width: 45%;
 
     .header {
       font-size: vars.$h2-desktop-font-size;
@@ -26,7 +82,8 @@
     }
 
     .text {
-      width: 90%;
+      width: 569px;
+      height: 330px;
       font-size: 20px;
       font-weight: vars.$body-desktop-font-weight;
       line-height: vars.$body-desktop-line-height;
@@ -37,20 +94,79 @@
     .downloadButtons {
       display: flex;
       gap: 20px;
-     margin-top: 10%;
+      margin-bottom: 10%;
     }
   }
 
-  .appLogo {
+  .appLogoSection {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    padding-right: 9%;
-    padding-top: 8%;
-    img {
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 250px;
+
+    .appLogoImg {
       max-width: 100%;
-      height: auto;
+    }
+  }
+}
+
+
+.about-us--mobile {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  margin-right: 20px;
+  text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: vars.$font-family;
+  background-color: vars.$color-alabaster-secondary;
+
+  .mobileContent {
+    margin-left: 20px;
+    .appLogoSection {
+      align-items: flex-start;
+      justify-content: center;
+
+      .appLogoImg {
+        width: 102px;
+        height: 95px;
+      }
+
+      .h2 {
+        font-size: large;
+        font-weight: vars.$thin;
+        letter-spacing: 2.35px;
+      }
+    }
+
+    .downloadButtons {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .downloadGoogle,
+      .downloadApple {
+        width: 180px;
+        height: 52px;
+      }
+    }
+
+    .header {
+      margin-top: 48px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$h2-mobile-font-weight;
+      line-height: vars.$text-button-mobile-line-height;
+      letter-spacing: vars.$h2-mobile-letter-spacing;
+    }
+    .text {
+      margin-top: 16px;
+      font-size: vars.$h3-mobile-font-size;
+      font-weight: vars.$thin;
+      line-height: 28px;
+      letter-spacing: 2.14px;
     }
   }
 }
