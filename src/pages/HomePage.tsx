@@ -46,7 +46,7 @@ export const HomePage = () => {
                 </div>
                 <ChefOfTheWeek />
                 <AboutUs />
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
     )
